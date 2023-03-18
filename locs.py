@@ -1,0 +1,7 @@
+WHATSAPP_MENU = {"x": 1000, "y": 150}
+
+DROPBOX_UPLOAD_BUTTON = {"x": 850, "y": 2250}
+
+DROPBOX_CLOSE_BUTTON = {"x": 80, "y": 160}
+
+WHATSAPP_IMAGE_HEADER = {"y": 100, "h": 120, "x": 200, "w": 500}
