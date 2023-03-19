@@ -1,11 +1,14 @@
+from time import sleep
+
 from ppadb.client import Client as AdbClient
+
 import interaction as ia
 import locs
-from time import sleep
 
 
 def Stage(func: callable, *args, **kwargs):
     pass
+
 
 client = AdbClient(host="127.0.0.1", port=5037)
 print("Select device:")
@@ -61,7 +64,7 @@ while True:
             print("✔️")
             break
         input("  2. Fix and continue")
-    
+
     # 3. Select Dropbox > OCR
     while True:
         # Action
@@ -107,7 +110,7 @@ while True:
         if replace_text:
             print("  replacing ", end="")
             while True:
-                #Action
+                # Action
                 ia.tap(device, **replace_text.xy_location)
                 # Wait
                 sleep(4)
@@ -122,13 +125,13 @@ while True:
             print("✔️")
             break
         input("Fix and Continue")
-            
+
     # 6. Close Dropbox
     while True:
         # Action
         print("  6. Close Dropbox", end=" ")
         ia.tap(device, **locs.DROPBOX_CLOSE_BUTTON)
-        # Wait 
+        # Wait
         sleep(0.5)
         shot = ia.Screenshot(device)
         uploaded_text = shot.search("Uploaded")

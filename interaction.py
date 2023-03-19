@@ -1,6 +1,7 @@
-import pytesseract
-import cv2
 from dataclasses import dataclass
+
+import cv2
+import pytesseract
 
 
 def swipe(device: any, x_1: int, y_1: int, x_2: int, y_2: int, speed: int = None):
@@ -93,7 +94,6 @@ class Screenshot:
 
     def contact_text(self) -> str:
         return "-".join(self.keys)
-
 
 
 class CroppedScreenshot(Screenshot):
