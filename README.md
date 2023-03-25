@@ -66,7 +66,6 @@ use ADB
 ## To-dos
 - [ ] Increase robustness of each step
 - [ ] Refactor to make each step a combination of _Action_, _Collection_ and _Validation_.
-
 - [ ] Make it more generally usable (if interest)
 
 ## Acknowledgments
